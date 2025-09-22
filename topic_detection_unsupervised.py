@@ -269,7 +269,7 @@ def run_experiment(args):
         words = [dictionary[id_] for id_ in top_ids]
         top_rows.append(words)
 
-    # Build a table like Chapter 5 (columns = Topic0..TopicT-1, rows = keywords)
+    # Build a table (columns = Topic0..TopicT-1, rows = keywords)
     max_len = max(len(row) for row in top_rows)
     topic_table = pd.DataFrame(
         {f"Topic{t}": (top_rows[t] + [""] * (max_len - len(top_rows[t]))) for t in range(T_topics)}
@@ -364,3 +364,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     run_experiment(args)
+
