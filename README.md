@@ -27,8 +27,6 @@ python topic_detection_unsupervised.py \
   --data path/to/switchboard.csv \
   --text_col utterance \
   --label_col label \
-  --dataset_name switchboard \
-  --outdir outputs/switchboard
 ```
 
 **Outputs** are written under `--outdir`:
