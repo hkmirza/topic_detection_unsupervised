@@ -104,9 +104,9 @@ After running the script per dataset (Switchboard, PersonaChat, MultiWOZ), open
 
 ---
 
-## 6) Notes on Intrinsic Coherence (Optional)
+##  Notes on Intrinsic Coherence (Optional)
 
-The thesis reports external metrics; if you need **topic coherence (NPMI)** intrinsics, you can extend the script by plugging in `octis` or `gensim`’s coherence module with a reference corpus. This is not enabled by default to keep dependencies minimal.
+The code reports external metrics; if you need **topic coherence (NPMI)** intrinsics, you can extend the script by plugging in `octis` or `gensim`’s coherence module with a reference corpus. This is not enabled by default to keep dependencies minimal.
 
 ---
 
