@@ -4,7 +4,7 @@
 
 # Unsupervised Topic Detection 
 
-This repository contains a **reproducible** implementation of the *unsupervised topic detection* pipeline described in Chapter 5 of the thesis. It follows the exact stages used in the experiments:
+This repository contains a **reproducible** implementation of the *unsupervised topic detection* pipeline. It follows the exact stages used in the experiments:
 
 1) preprocessing → 2) TF–IDF featureisation → 3) k-means with elbow/Knee selection → 4) topic keyword extraction → 5) evaluation (precision/recall/F1/accuracy against reference labels when available).
 
