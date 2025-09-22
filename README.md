@@ -1,8 +1,8 @@
-# topic_detection_unsupervised
 
 
 
-# Unsupervised Topic Detection — Reproducible Pipeline
+
+# Unsupervised Topic Detection 
 
 This repository contains a **reproducible** implementation of the *unsupervised topic detection* pipeline described in Chapter 5 of the thesis. It follows the exact stages used in the experiments:
 
