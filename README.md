@@ -60,7 +60,7 @@ utterance,label,conv_id
 
 ---
 
-##  How It Works (Aligned with Chapter 5)
+##  How It Works 
 
 - **Preprocessing**: case-folding, punctuation/URL removal, tokenisation, stopword removal, optional bigrams; lemmatisation optional (spaCy switch).
 - **Vectorisation**: TF–IDF on \(n\)-grams (default `[1,2]`), vocabulary pruning (`min_df=5`, `max_df=0.95`), L2-normalisation.
@@ -72,7 +72,7 @@ These steps mirror the thesis methodology to ensure **reproducibility**.
 
 ---
 
-## 4) Command-line Arguments
+##  Command-line Arguments
 
 ```bash
 python topic_detection_unsupervised.py --help
@@ -97,7 +97,7 @@ Key options:
 
 ---
 
-## 5) Reproducing Thesis Tables
+## Reproducing Tables
 
 After running the script per dataset (Switchboard, PersonaChat, MultiWOZ), open
 `topics_<dataset>.csv`. It lists **K\*** clusters with their **top-10 keywords** and sizes, so you can directly format the tables shown in Chapter 5. The `metrics_<dataset>.json` aggregates the scores presented alongside.
@@ -110,7 +110,7 @@ The thesis reports external metrics; if you need **topic coherence (NPMI)** intr
 
 ---
 
-## 7) Troubleshooting
+##  Troubleshooting
 
 - **Memory errors / slow fit**: reduce `--kmax`, lower `--ngram_max` to `1`, increase `min_df`.
 - **Few topics**: widen `--kmin/--kmax` or lower `min_df` to grow vocabulary.
@@ -118,7 +118,7 @@ The thesis reports external metrics; if you need **topic coherence (NPMI)** intr
 
 ---
 
-## 8) Environment
+##  Environment
 
 - Python 3.10+ recommended.
 - See `requirements_unsupervised.txt`. Install via:
@@ -126,8 +126,4 @@ The thesis reports external metrics; if you need **topic coherence (NPMI)** intr
   pip install -r requirements_unsupervised.txt
   ```
 
----
-
-## 9) Citation
-
-If you use this code, please cite the thesis and the following components: scikit-learn (TF–IDF, k-means), kneed (Kneedle), pandas, numpy, and spaCy (if enabled).
+--
