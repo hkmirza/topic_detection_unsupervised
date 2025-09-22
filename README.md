@@ -12,7 +12,7 @@ The main entry-point script is **`topic_detection_unsupervised.py`**.
 
 ---
 
-## 1) Quick Start
+## Quick Start
 
 ```bash
 # (Recommended) create a virtual environment
@@ -40,9 +40,9 @@ python topic_detection_unsupervised.py \
 
 ---
 
-## 2) Dataset Format
+## Dataset Format
 
-Input is a **CSV** with at least one text column containing dialogue utterances.
+Input is a **CSV** format with at least one text column containing dialogue utterances.
 
 | Column        | Required | Description                                                      |
 |---------------|----------|------------------------------------------------------------------|
@@ -60,7 +60,7 @@ utterance,label,conv_id
 
 ---
 
-## 3) How It Works (Aligned with Chapter 5)
+##  How It Works (Aligned with Chapter 5)
 
 - **Preprocessing**: case-folding, punctuation/URL removal, tokenisation, stopword removal, optional bigrams; lemmatisation optional (spaCy switch).
 - **Vectorisation**: TF–IDF on \(n\)-grams (default `[1,2]`), vocabulary pruning (`min_df=5`, `max_df=0.95`), L2-normalisation.
